@@ -1,1 +1,25 @@
 // Mixins in here
+
+.button(@width: 1rem, @padding, @bg: #fff, @radius: 0px, @color: #000) {
+  width: @width;
+  padding: @padding;
+  background: @bg;
+  border-radius: @radius;
+  color: @color;
+}
+
+.btn {
+  .button(18rem, 1rem 4rem, #487d7e, 10px, #fff);
+  font-size: 1.8rem;
+}
+
+// .custom-layout(@j: center, @a: center) {
+//   display: flex;
+//   justify-content: @j;
+//   align-items: @a;
+// }
+
+// nav {
+//   width: 90%;
+//   .custom-layout(space-around, flex-end);
+// }
