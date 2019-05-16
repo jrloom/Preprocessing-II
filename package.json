@@ -1,0 +1,26 @@
+{
+  "name": "preprocessing-ii",
+  "version": "1.0.0",
+  "description": "Fun Bus is a travel agency looking for some help on their website. They want a new navigation, new header, and new buttons on the home page. They also want a mobile version of their site styled. Use your preprocessing knowledge to accomplish their tasks.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrloom/Preprocessing-II.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrloom/Preprocessing-II/issues"
+  },
+  "homepage": "https://github.com/jrloom/Preprocessing-II#readme",
+  "devDependencies": {
+    "less-watch-compiler": "^1.13.0",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "devserver": "live-server",
+    "watch-less": "less-watch-compiler less css index.less",
+    "start": "npm-run-all --parallel devserver watch-less"
+  }
+}
