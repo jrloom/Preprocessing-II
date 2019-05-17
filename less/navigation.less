@@ -6,9 +6,19 @@
   justify-content: space-between;
   padding: 3rem 3rem 3rem 0;
   border-bottom: 2px dashed #c0c0c0;
+
+  @media @mobile {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+  }
+
   &__page-title {
     font-size: 5rem;
     font-weight: bold;
+
+    @media @mobile {
+      margin-bottom: 2rem;
+    }
   }
   &__navbar {
     &--link {
@@ -17,6 +27,12 @@
       text-decoration: none;
       &:not(:last-child) {
         margin-right: 2rem;
+
+        @media @mobile {
+          &:not(:last-child) {
+            margin-right: 4rem;
+          }
+        }
       }
     }
   }
